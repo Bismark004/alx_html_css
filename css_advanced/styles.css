@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: #fff;
+   
+}
+
+header {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    border: 1px solid red;
+    z-index: 1; 
+}
+
+header nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin: 20px auto 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    letter-spacing: 1px;
+    column-gap: 15px;
+     
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    position: relative;
+    background: url('./images/Object.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100svh;
+    width: 100svw;
+}
+
+.first {
+    border: 1px solid red;
+    padding: 20%;
+    
+}
+
+.center h1 {
+    font-weight: 600;
+    font-size: 84px;
+
+
+
