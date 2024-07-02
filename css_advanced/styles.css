@@ -86,7 +86,7 @@ text-align: center;
     font-size: 16px;
 }
 
-.center button {
+ button {
     width: 162px;
     height: 44px;
     background-color: #c271ff;
@@ -174,7 +174,6 @@ margin-left: 48px;
 .tutorials .container {
     display: flex;
     width: 100%;
-    border: 1px solid red;
     gap: 4%;
     padding: 0 6%;
     justify-content: space-around;
@@ -182,13 +181,11 @@ margin-left: 48px;
 }
 
 .tutorials .container .parent{
-    border: 1px solid red;
     text-align: start;
 }
 .massey{
     display: flex;
     height: 30px;
-    border: 1px solid red;
     align-items: center;
 }
 
@@ -205,4 +202,24 @@ margin-left: 48px;
 
 .stars {
     display: flex;
+}
+
+
+.free-membership {
+    width: 100%;
+    padding: 70px 0;
+    height: 502px;
+    background: rgba(7,22,41,1);
+    text-align: center;
+
+}
+
+.free-membership .container {
+    display: flex;
+    margin: 98px auto 0;
+    width: 80%;
+}
+
+.free-membership .container div {
+    width: 257px;
 }
