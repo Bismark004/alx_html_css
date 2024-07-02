@@ -1,20 +1,24 @@
 *{
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
 
 }
 
 body{
     color: #fff;
-   
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+
 }
 
 header {
     position: absolute;
-    top: 2%;
+    top: 0%;
     width: 100%;
     z-index: 1; 
+    overflow: hidden;
+    opacity: 1;
 }
 
 header nav {
@@ -22,6 +26,8 @@ header nav {
     width: 76.6%;
     justify-content: space-between;
     margin: 35.02px auto 0;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 ul {
@@ -37,30 +43,166 @@ ul li a {
     color: #fff;
 }
 
-main {
+.first {
     position: relative;
-    background: url('./images/Object.png') no-repeat center center fixed;
+    background:  linear-gradient(
+        to bottom,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0.7)
+    ),url('./images/Object.png') no-repeat center center;
     background-size: cover;
-    height: 100dvh;
+    height: 1093px;
     width: 100dvw;
 }
 
 .center {
 padding-top: 220px;
-text-align: center;
 width: 100%;
-height: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
+text-align: center;
 }
 
 .center h1 {
-    font-weight: 700;
+    width: 684px;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    font-weight: Bold;
     font-size: 120px;
+    margin: 0 auto;
 }
 
 .types {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0; 
+    margin: 0 auto;
 
 
+
+}
+
+.types span {
+    font-weight: Bold;
+    font-size: 16px;
+}
+
+.center button {
+    width: 162px;
+    height: 44px;
+    background-color: #c271ff;
+    border: 0px solid rgba(150,150,150,1);
+    border-radius: 22px;
+    color: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 42px;
+    text-align: center;
+    font-weight: Semibold;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.pros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 142px;
+
+    
+}
+.pros h2 {
+    font-size: 32px;
+    
+}
+
+.pros h2 span {
+    font-weight: semibold;
+}
+
+.persons {
+    display: flex;
+    width: 70.07%;
+    margin-top: 92px;  
+    justify-content: space-between;
+}
+
+.persons div {
+    text-align: center;
+    height: 237px;
+}
+ 
+.persons div img {
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+}
+
+.testimonials {
+    width: 100%;
+    height: 392px;
+    background-color: rgba(193,112,255,1);
+    border: 0px solid rgba(150,150,150,1);
+    padding: 108px 213px;
+    display: flex;
+    border: 1px solid red;
+
+}
+
+.testimonials .text {
+margin-left: 48px;
+}
+
+.testimonials .text p{
+    font-weight: Regular; 
+    font-size: 22px;
+}
+
+.testimonials .text h3 {
+    font-weight: Bold;
+    font-size: 22px;
+}
+
+.tutorials {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background:  rgba(255,255,255,1); 
+    color: black;
+
+}
+
+.tutorials .container {
+    display: flex;
+    width: 100%;
+    border: 1px solid red;
+    gap: 4%;
+    padding: 0 6%;
+    justify-content: space-around;
+    height: 335px;
+}
+
+.tutorials .container .parent{
+    border: 1px solid red;
+    text-align: start;
+}
+.massey{
+    display: flex;
+    height: 30px;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.massey img {
+    width: 30px;
+    height: 30px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars {
+    display: flex;
 }
