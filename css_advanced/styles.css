@@ -5,11 +5,18 @@
 }
 
 body{
+    width: 100dvw;
+    height: auto;
     color: #fff;
     margin: 0;
     padding: 0;
     font-family: Source Sans Pro;
 
+}
+
+main {
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -51,8 +58,8 @@ ul li a {
         rgba(0,0,0,0.7)
     ),url('./images/Object.png') no-repeat center center;
     background-size: cover;
-    height: 1093px;
-    width: 100dvw;
+    min-height: 1093px;
+    width: 100%;
 }
 
 .center {
@@ -121,28 +128,33 @@ text-align: center;
 
 .persons {
     display: flex;
-    width: 70.07%;
+    min-width:  70.07%;
+    max-width: 100%;
     margin-top: 92px;  
     justify-content: space-between;
 }
 
 .persons div {
     text-align: center;
-    height: 237px;
+    min-height: 237px;
+    height: auto;
 }
  
 .persons div img {
     border-radius: 75px;
     height: 150px;
-    width: 150px;
+    max-width: 150px;
+    min-width: 80px;
+    aspect-ratio: 1/1;
+
 }
 
 .testimonials {
     width: 100%;
-    height: 392px;
+    min-height: 392px;
     background-color: rgba(193,112,255,1);
     border: 0px solid rgba(150,150,150,1);
-    padding: 108px 213px;
+    padding: 108px 14.8%;
     display: flex;
     border: 1px solid red;
 
@@ -164,10 +176,10 @@ margin-left: 48px;
 
 .tutorials {
     width: 100%;
-    height: 450px;
+    height: auto;
     text-align: center;
     background:  rgba(255,255,255,1); 
-    color: black;
+    color: rgba(7,22,41,1); 
 
 }
 
@@ -177,7 +189,7 @@ margin-left: 48px;
     gap: 4%;
     padding: 0 6%;
     justify-content: space-around;
-    height: 335px;
+    height: auto;
 }
 
 .tutorials .container .parent{
@@ -205,10 +217,41 @@ margin-left: 48px;
 }
 
 
+.faq{
+    height: 707px;
+    background: rgba(255,255,255,1);
+    width: 100%;
+    color: rgba(7, 22, 41, 1);
+    border: 1px solid red;
+}
+
+.faq h2 {
+    text-align: center;
+    font-weight: Light;
+    font-size: 60px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+.grid .parent {
+    display: flex;
+    height: 242px;
+    gap: 20%;
+    padding: 0 10%;
+}
+
+
 .free-membership {
     width: 100%;
     padding: 70px 0;
-    height: 502px;
+    height: auto;
     background: rgba(7,22,41,1);
     text-align: center;
 
@@ -225,32 +268,36 @@ margin-left: 48px;
     width: 257px;
 }
 
-.faq{
-    height: 707px;
-    background: rgba(255,255,255,1);
-    width: 100%;
-    color: rgba(7, 22, 41, 1);
-    border: 1px solid red;
-}
 
-.faq h2 {
-    text-align: center;
-    font-weight: Light;
-    font-size: 60px;
-}
+@media (max-width: 768px) {
+    .persons{
+        overflow: scroll;
+    }
+    .tutorials .container{
+         overflow-x: scroll;
+    }
 
+    .tutorials .container .parent{
+        width: 100vw;
+    }
 
+    .faq {
+        overflow-y: scroll;
+    }
+     .second-parent {
+        visibility: hidden;
+     }
+    
+    
+    
+    
 
-.grid .parent {
-    display: flex;
-    height: 242px;
-    gap: 20%;
-    padding: 0 10%;
+    
 }
 
 footer {
     width: 100%;
-    height: 249px;
+    min-height: 249px;
     background: rgba(7,22,41,1);
     text-align: center;
     padding: 95px 10% 0 10%;
@@ -268,3 +315,4 @@ footer section .parent {
     justify-content: space-around;
     align-items: center;
 }
+
