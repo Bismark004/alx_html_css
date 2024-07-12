@@ -1,0 +1,255 @@
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100dvw;
+    color: #fff;
+    font-family: Source Sans Pro;
+
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: absolute;
+    top: 3.7%;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+
+}
+
+header nav {
+    display: flex;
+    width: 69.47%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35.02px auto 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    letter-spacing: 1px;
+    column-gap: 15px;
+    margin-top: 1.98px;
+     
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover, ul li a:active {
+    color: #ff6565;
+}
+
+.hamburger {
+    display: none;
+}
+
+.first {
+    background:  url('./images/background.png') no-repeat center center;  
+    position: relative;
+    background-size: cover;
+    min-height: 800px;
+    width: 100%;
+}
+
+.text {
+    position: relative;
+    top: 372px;
+    height: 313px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .text .p-1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.11px;
+ }
+
+ .text h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40.22px;
+ }
+
+ button {
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    height: 44px;
+    width: 162px;
+    text-align: center;
+    background: #FF6565;
+    border-radius: 22px;
+    border: none; 
+    color: #fff; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: box-shadow 0.3s ease; 
+    padding: 12px;
+}
+
+button:hover, button:active{
+    opacity: 0.9
+}
+
+.text button {
+    margin-top: 42px;
+}
+
+.p-2 {
+    width: clamp(313px, 50%, 637px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    height: auto;
+    margin-top: 56px;
+}
+                                                                                  
+
+.second {
+    width: 100%;
+    background-color: #fff;
+    height:  auto;
+    display: flex;
+    flex-direction: column;
+    color:  #071629;
+    align-items: center;
+    text-align: center;
+    padding: 10% 0 10% 0;
+}
+
+.part-1 {
+    width: clamp(325px, 50%, 637px);
+    height: auto;
+}
+
+.part-1 h3{
+    font-size: 32px;
+    line-height: 37.5px;
+
+}
+
+.part-1 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 80px;
+}
+
+.part-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1002px;
+    place-items: center;
+    height: auto;
+    padding: 120px 0 0 0;
+    gap: 56px;
+}
+
+.part-2 div {
+    width: 207px;
+    height: 180px;
+    margin: 20px;
+}
+
+.results {
+    width: 100%;
+    background:  url('./images/background2.png') no-repeat center center;
+    background-size: cover;
+    padding-top: 141px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 650px;
+}
+
+.results h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+}
+
+.results p{
+    width: clamp(313px, 50%, 637px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    height: auto;
+    margin-top: 56px;
+}
+
+.results div {
+
+    margin-top: 62px;
+    width: 66.3%;
+    display: grid;
+    height: auto;
+    place-items: center;
+    gap: 48px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.results div img {
+    width: 190px;
+    height: 190px;
+    margin-top: 0;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .part-2, .results div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .results {
+        height: 876px;
+    }
+}
+
+@media (max-width: 768px) {
+    .part-2, .results div {
+        grid-template-columns: 1fr;
+    }
+
+    .results {
+        height: 1491px;
+    }
+
+
+    header nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        margin-right: 160px;
+    }
+
+    header nav {
+        width: 90%;
+        justify-content: start;
+    }
+}

@@ -51,6 +51,10 @@ ul li a {
     color: #fff;
 }
 
+ul li a:hover, ul li a:active {
+    color: #ff6565;
+}
+
 .hamburger {
     display: none;
 }
@@ -100,6 +104,10 @@ ul li a {
     cursor: pointer; 
     transition: box-shadow 0.3s ease; 
     padding: 12px;
+}
+
+button:hover, button:active{
+    opacity: 0.9
 }
 
 .text button {
