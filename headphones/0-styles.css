@@ -57,6 +57,7 @@ ul li a:hover, ul li a:active {
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 .first {
@@ -145,6 +146,7 @@ button:hover, button:active{
 
     header nav ul {
         display: none;
+        
     }
 
     .hamburger {
